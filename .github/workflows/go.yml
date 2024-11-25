@@ -11,7 +11,7 @@ jobs:
 
   resq:
   
-    runs-on: ubuntu-lasted
+    runs-on: ubuntu-latest
 
     steps:
       - name: 'build'
