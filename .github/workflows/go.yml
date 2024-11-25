@@ -15,5 +15,6 @@ jobs:
 
     steps:
       - name: 'build'
-        run: echo "hola tonotos"
+        run: go build -o resq
+        
    
