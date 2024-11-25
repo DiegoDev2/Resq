@@ -23,5 +23,12 @@ jobs:
         run: go version
       - name: Install dependencies
         run: go get -v -t -d ./...
+
+      - name: Install golangci-lint
+        run: go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+
+      - name: Run golangci-lint
+        run: golangci-lint run ./...
+
       - name: 'build'
-        run: go build -o resq
+       run: go build -o resq
